@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/app_background"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".MainActivity"
@@ -12,5 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/inner_frame_layout_padding"
-        android:boxedEdges="all" />
+        app:boxedEdges="all">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:padding="3dp"
+            android:textColor="@color/white" />
+    </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
